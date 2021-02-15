@@ -7,6 +7,7 @@
 <body>
 <h4>Records</h4>
 <table>
+        <th>ID</th>
         <th>Name</th>
         <th>Address</th>
         <th>City</th>
@@ -18,9 +19,12 @@
             <td>{{ record[1] }}</td>
             <td>{{ record[2] }}</td>
             <td>{{ record[3] }}</td>
+            <td>{{ record[4] }}</td>
+            <td><a href="/delete-student/{{ record[0] }}">Delete</a> </td>
         </tr>
     {% endfor %}
 </table>
 <h5><a href="/">Enter New</a> </h5>
+<h5><a href="/show-records/">show records page</a></h5>
 </body>
 </html>
